@@ -1,0 +1,15 @@
+Description:
+    A simple generator for creating star rating for an object.
+    Usage:
+    rails generate star_rating
+
+Example:
+    rails generate star_rating
+
+    This will create:
+       app/assets/images/on.png
+       app/assets/images/off.png
+       app/assets/javascripts/rating.coffee
+       app/assets/stylesheets/rating.css
+       app/views/shared/_rating.html.erb
+
