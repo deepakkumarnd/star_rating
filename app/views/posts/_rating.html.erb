@@ -1,0 +1,11 @@
+<% res = rating %>
+<div class="rating">
+  <%= form_for res, html: { id: "form_#{res.id}" } do |f| %>
+    <%= f.hidden_field :rating, id: "input_#{res.id}"%>
+  <% end %>
+  <ul class="stars">
+    <% [*1..5].each do |i|%>
+      <li class="star <%= res.id %>" id="<%= "#{res.id}_#{i}" %>" ></li>
+    <% end %>
+  </ul>
+</div>

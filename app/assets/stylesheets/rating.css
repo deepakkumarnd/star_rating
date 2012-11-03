@@ -1,0 +1,17 @@
+.rating li{
+  width: 32px;
+  height: 32px;
+  list-style: none;
+  display: block;
+  float: left;
+}
+
+.on{
+  display: block;
+  background-image: url('on.png');
+}
+
+.off{
+
+  background-image: url('off.png');
+}
