@@ -7,12 +7,10 @@ Gem::Specification.new do |gem|
   gem.authors              = ["Deepak"]
   gem.email                = ["deepakkumarnd@gmail.com"]
   gem.homepage             = ""
-  gem.summary              = %q{ A eventmachine based web application framework }
-  gem.description          = %q{ A eventmachine based web application framework }
+  gem.summary              = %q{ A simple gem for creating star rating }
+  gem.description          = %q{ A simple gem for creating star rating }
   gem.files                = `git ls-files`.split("\n")
   gem.test_files           = gem.files.grep(/^(spec|test|features)/)
-  gem.executables          = gem.files.grep(/^bin/).map{ |f| File.basename(f) }
   gem.require_paths        = ["lib"]
-  gem.add_development_dependency "rspec"
-  gem.add_runtime_dependency "eventmachine"
+  gem.add_runtime_dependency "rails"
 end
