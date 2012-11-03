@@ -1,6 +1,6 @@
 # Rails Star Rating
 
-A simple gem to add star rating to an active record object.
+A simple gem to add star rating to a resource.
 
 ## Installation:
 
