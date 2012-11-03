@@ -5,7 +5,6 @@ A simple gem to add star rating to an active record object.
 ## Installation:
 
 Add the following line to Gemfile
-## add the following line to Gemfile
 
 	gem "star_rating", git: "git@github.com:deepakkumarnd/star_rating.git"
 
