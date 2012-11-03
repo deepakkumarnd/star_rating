@@ -1,11 +1,11 @@
-<% res = rating %>
+<% res = object %>
 <div class="rating">
-  <%= form_for res, html: { id: "form_#{res.id}" } do |f| %>
-    <%= f.hidden_field :rating, id: "input_#{res.id}"%>
+  <%= form_for res, url: submit_path, html: { id: "form_#{res.id}" } do |f| %>
+    <%= f.hidden_field :rating, id: "input_#{res.id}", class: "rating_value_field" %>
   <% end %>
   <ul class="stars">
-    <% [*1..5].each do |i|%>
-      <li class="star <%= res.id %>" id="<%= "#{res.id}_#{i}" %>" ></li>
+    <% 5.times do |i|%>
+      <li class="star <%= res.id %>" id="<%= "#{res.id}_#{i+1}" %>" ></li>
     <% end %>
   </ul>
 </div>

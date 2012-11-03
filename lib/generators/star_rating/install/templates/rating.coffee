@@ -1,6 +1,15 @@
 jQuery ->
-  for i in [1..5]
-    $(".star").addClass("off")
+  initialize = () ->
+    for i in [1..5]
+      $(".star").addClass("off")
+      for field in $(".rating_value_field")
+        res_id = field.id.split('_')[1]
+        star_count = parseInt(field.value)
+        for i in [1..star_count] when star_count isnt 0
+          $("##{res_id}_#{i}").removeClass("off")
+          $("##{res_id}_#{i}").addClass("on")
+
+  initialize()
 
   $(".star").click ->
     clicked = $(this)
