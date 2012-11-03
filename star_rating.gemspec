@@ -2,7 +2,7 @@
 $:.push File.expand_path("../lib", __FILE__)
 
 Gem::Specification.new do |gem|
-  gem.name                 = "emf"
+  gem.name                 = "star_rating"
   gem.version              = "0.0.1"
   gem.authors              = ["Deepak"]
   gem.email                = ["deepakkumarnd@gmail.com"]
